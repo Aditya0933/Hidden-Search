@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-image: linear-gradient(130deg,rgb(230, 14, 14),yellow);
+}
+.search{
+    position: relative;
+}
+.search .input{
+    /* background-image: linear-gradient(260deg,rgb(255, 255, 255),rgb(255, 0, 0));  */
+    background-color: #ffffff;
+    height: 3rem;
+    width: 3rem;
+    border: 0;
+    border-radius: 2rem;
+    padding: 15px;
+    transition: width 0.3s ease;
+}
+.search .button{
+   position: absolute; 
+   top: 0;
+   left: 0;
+   height: 3rem;
+   width: 3rem;
+   background-color: #ffffff;
+   font-size: 20px;
+   border-radius:2rem;
+   border: 0;
+   cursor: pointer;
+   transition: transform 0.3s ease;
+}
+.search.active .button{
+    transform: translateX(200px);
+}
+.search.active .input{
+    width: 12.4rem;
+}
+.search .input:focus,.search .button:focus{
+    outline: 0;
+}
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image:linear-gradient(90deg, blue, purple);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow:hidden;
+}
+
+.search{
+    position:relative;
+    height: 50px;
+}
+
+.search .input{
+    background-color: #fff;
+    padding:10px;
+    border:0;
+    height:50px;
+    width:50px;
+    font-size: 18px;
+    transition: width 0.3s ease;
+}
+
+.search .button{
+    background-color: #fff;
+    border:0;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 50px;
+    width:50px;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.search.active .button{
+    transform: translateX(400px);
+}
+
+.search.active .input{
+    width:200px;
+}
+
+.search .input:focus, .search .button:focus{
+    outline:0;
+} */
